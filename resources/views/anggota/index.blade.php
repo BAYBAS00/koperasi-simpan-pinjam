@@ -142,7 +142,7 @@
                             @method('DELETE')
 
                             <button class="btn btn-sm btn-danger">
-                                Delete
+                                Hapus
                             </button>
                         </form>
                     </td>

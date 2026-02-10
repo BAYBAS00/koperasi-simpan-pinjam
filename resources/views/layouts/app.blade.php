@@ -109,12 +109,12 @@
                         </a>
                     </li>
                 @else
-                    <li>
+                    {{-- <li>
                         <a class="nav-link text-white {{ request()->routeIs('member.pinjaman.*') ? 'active' : '' }}"
                             href="{{ route('member.pinjaman.index') }}">
                             Pinjaman
                         </a>
-                    </li>
+                    </li> --}}
 
                     <li>
                         <a class="nav-link text-white {{ request()->routeIs('member.angsuran.*') ? 'active' : '' }}"

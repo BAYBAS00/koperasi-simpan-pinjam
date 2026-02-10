@@ -33,8 +33,9 @@
 
                                 @foreach ($simpanan_masters as $sm)
                                     <option value="{{ $sm->id }}">
-                                        {{ $sm->anggota->nama }}
-                                        (Saldo: Rp {{ number_format($sm->saldo, 0, ',', '.') }})
+                                        {{ $sm->kode_simpanan_master }}
+                                       - {{ $sm->anggota->nama }}
+                                       - (Saldo: Rp {{ number_format($sm->saldo, 0, ',', '.') }})
                                     </option>
                                 @endforeach
 

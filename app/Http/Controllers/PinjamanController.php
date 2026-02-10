@@ -71,6 +71,14 @@ class PinjamanController extends Controller
 
         DB::transaction(function () use ($request, $user) {
 
+            $bungaDefault = 1; // ⭐ koperasi rule
+
+            $hasil = PinjamanService::hitung(
+                $request->jumlah,
+                $request->tenor,
+                $bungaDefault
+            );
+
             Pinjaman::create([
                 'id_anggota' => $user->anggota->id,
                 'kode_pinjaman' => 'PIN-'.now()->format('Ymd').'-'.Str::upper(Str::random(5)),
@@ -78,7 +86,7 @@ class PinjamanController extends Controller
                 'jumlah' => $request->jumlah,
                 'tenor' => $request->tenor,
                 'bunga' => 1, // default
-                'cicilan' => 0,
+                'cicilan' => $hasil['cicilan'],
                 'status' => 'menunggu',
             ]);
         });
