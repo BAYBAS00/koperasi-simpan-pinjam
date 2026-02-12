@@ -138,7 +138,7 @@
                                         @method('DELETE')
 
                                         <button onclick="return confirm('Hapus transaksi?')" class="btn btn-sm btn-danger">
-                                            Delete
+                                            Hapus
                                         </button>
 
                                     </form>

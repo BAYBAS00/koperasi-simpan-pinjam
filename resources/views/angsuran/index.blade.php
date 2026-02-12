@@ -176,7 +176,7 @@ GROUP PER PINJAMAN
 
                                             <button class="btn btn-sm btn-danger"
                                                 onclick="return confirm('Hapus angsuran?')">
-                                                Delete
+                                                Hapus
                                             </button>
 
                                         </form>

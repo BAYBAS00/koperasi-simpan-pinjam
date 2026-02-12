@@ -100,7 +100,7 @@
 
                                         <button onclick="return confirm('Hapus rekening ini?')"
                                             class="btn btn-sm btn-danger">
-                                            Delete
+                                            Hapus
                                         </button>
 
                                     </form>

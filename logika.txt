@@ -1,9 +1,0 @@
-Dari semua file serta code yang sudah dibuat dalam folder koperasi ini,
-rapihkan dan perbaiki code-code tersebut sesuai dengan logika berikut:
-- Pengurus bisa manambah data users, anggotas, dan pengurus
-- pengurus bisa mengubah status pengajuan pinjaman menjadi disetujui, ditolak, dan lunas
-- anggota hanya bisa mengajukan pinjaman dan data anggota itu sendiri, data simpanan master anggota itu sendiri, data simpanan detail anggota itu sendiri, data pinjaman anggota itu sendiri, dan data angsuran anggota itu sendiri
-- pengurus bisa menambah simpanan master dan simpanan detail
-- jumlah angsuran mengurangi jumlah pinjaman sehingga jumlah pinjaman 0
-- simpanan detail memiliki 2 fungsi yaitu simpanan dan penarikan dimana simpanan menambah jumlah simpanan dan penarikan mengurangi jumlah simpanan
-- bunga pada pinjaman memiliki nulai default 1%
