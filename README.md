@@ -153,8 +153,6 @@ DB_PASSWORD=
 php artisan migrate
 ```
 
-*(Jika tersedia seeder)*
-
 ```bash
 php artisan migrate:fresh --seed
 ```
@@ -173,7 +171,6 @@ http://127.0.0.1:8000
 ---
 
 # 🔑 Akun Demo
-*(Sesuaikan dengan database / seeder)*
 
 ## 👨‍💼 Pengurus
 ```
