@@ -9,23 +9,11 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::middleware('role:anggota')
+Route::middleware(['auth','role:anggota'])
     ->prefix('member')
     ->name('member.')
     ->group(function () {
 
-        /*
-        |--------------------------------------------------------------------------
-        | PROFILE
-        |--------------------------------------------------------------------------
-        */
-
-        Route::get('/profile', fn () => view('anggota.profile', [
-            'anggota' => Auth::user()->anggota,
-        ]))->name('profile.show');
-
-        Route::put('/profile', [AnggotaController::class, 'update'])
-            ->name('profile.update');
 
         /*
         |--------------------------------------------------------------------------
