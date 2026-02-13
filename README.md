@@ -1,6 +1,5 @@
-![Laravel](https://img.shields.io/badge/Laravel-10-red)
+![Laravel](https://img.shields.io/badge/Laravel-11-red)
 ![Status](https://img.shields.io/badge/status-academic-success)
-![License](https://img.shields.io/badge/license-MIT-blue)
 
 # 🏦 Aplikasi Koperasi Simpan Pinjam
 
