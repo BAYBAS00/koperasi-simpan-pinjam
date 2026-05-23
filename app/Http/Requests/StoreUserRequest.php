@@ -27,4 +27,17 @@ class StoreUserRequest extends FormRequest
             'role' => ['required', 'in:pengurus,anggota'],
         ];
     }
+
+    public function messages(): array
+    {
+        return [
+            'password.min' => 'Password minimal 6 karakter.',
+            'password.required' => 'Password wajib diisi.',
+            'username.min' => 'Username minimal 4 karakter.',
+            'username.required' => 'Username wajib diisi.',
+            'username.unique' => 'Username sudah digunakan.',
+            'role.required' => 'Role wajib dipilih.',
+            'role.in' => 'Role tidak valid.',
+        ];
+    }
 }
